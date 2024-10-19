@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor SIL Simulation</title>
+</head>
+<body>
+    <h1>Motor SIL Simulation</h1>
+    <form action="/run_simulation" method="POST">
+        <label for="sim_time">Simulation Time (seconds):</label>
+        <input type="text" id="sim_time" name="sim_time" required><br><br>
+
+        <label for="time_step">Time Step (seconds):</label>
+        <input type="text" id="time_step" name="time_step" required><br><br>
+
+        <button type="submit">Run Simulation</button>
+    </form>
+
+    <form action="/stop_simulation" method="POST">
+        <button type="submit">Stop Simulation</button>
+    </form>
+</body>
+</html>

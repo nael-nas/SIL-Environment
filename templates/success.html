@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Results</title>
+</head>
+<body>
+    <h1>Simulation Results</h1>
+    <p>The simulation has completed successfully. Below are the results:</p>
+
+    <h2>Current Plot</h2>
+    <img src="{{ url_for('static', filename='current_plot.png') }}" alt="Current Plot">
+
+    <h2>Torque Plot</h2>
+    <img src="{{ url_for('static', filename='torque_plot.png') }}" alt="Torque Plot">
+
+    <h2>Speed Plot</h2>
+    <img src="{{ url_for('static', filename='speed_plot.png') }}" alt="Speed Plot">
+
+    <br><br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
