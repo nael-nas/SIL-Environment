@@ -1,0 +1,274 @@
+\doxysection{csv\+\_\+motor\+\_\+sil\+\_\+test.\+c File Reference}
+\hypertarget{csv__motor__sil__test_8c}{}\label{csv__motor__sil__test_8c}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for csv\+\_\+motor\+\_\+sil\+\_\+test.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{csv__motor__sil__test_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{csv__motor__sil__test_8c_a598a3330b3c21701223ee0ca14316eca}{PI}}~3.\+14159265359
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{csv__motor__sil__test_8c_a341b09ab4b8f3ce3c2f903e71fa4cfeb}{motor\+\_\+mechanics}} (double \mbox{\hyperlink{csv__motor__sil__test_8c_a21431830a78f670d5dc8e08ad860bcf9}{Te}}, double Tl, double \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{csv__motor__sil__test_8c_a186d9976b206fdca68b8a988e60148bb}{omega\+\_\+m}}, double time\+\_\+step)
+\item 
+void \mbox{\hyperlink{csv__motor__sil__test_8c_a368106079e23c2ed72415ef3dd3d2362}{foc\+\_\+control}} (double \mbox{\hyperlink{csv__motor__sil__test_8c_a1999dc08300c57b2f4149553cc8d7f83}{id\+\_\+ref}}, double \mbox{\hyperlink{csv__motor__sil__test_8c_a1f4dea1e335fbe56f58f6852b0cac132}{iq\+\_\+ref}}, double \mbox{\hyperlink{csv__motor__sil__test_8c_ae73d8fab0b44acec1c88ef0f1a07f08a}{id}}, double \mbox{\hyperlink{csv__motor__sil__test_8c_abb89d9e5d6c367b40137646255bf0d8a}{iq}}, double \mbox{\hyperlink{csv__motor__sil__test_8c_aaf4377a46cba15eb68272ca12f84818b}{theta\+\_\+e}}, double time\+\_\+step)
+\item 
+void \mbox{\hyperlink{csv__motor__sil__test_8c_ac943ae92f993bb420d5f7710cb6062f4}{motor\+\_\+dynamics}} (double \mbox{\hyperlink{csv__motor__sil__test_8c_a74e8ba1ad6281c67bf4ddb41a7b85d6e}{vd}}, double \mbox{\hyperlink{csv__motor__sil__test_8c_a0ef985843d0c369c46969db4a6ac697a}{vq}}, double \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{csv__motor__sil__test_8c_ae73d8fab0b44acec1c88ef0f1a07f08a}{id}}, double \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{csv__motor__sil__test_8c_abb89d9e5d6c367b40137646255bf0d8a}{iq}}, double time\+\_\+step)
+\item 
+int \mbox{\hyperlink{csv__motor__sil__test_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{csv__motor__sil__test_8c_afb148be8dc640ef64d116be2f4631e8c}{Rs}} = 0.\+1
+\item 
+const double \mbox{\hyperlink{csv__motor__sil__test_8c_a73e7ca81301e13a7c2ff3d9231643578}{Ld}} = 0.\+005
+\item 
+const double \mbox{\hyperlink{csv__motor__sil__test_8c_a98c068c9c9ee1e25c925f5846c938c33}{Lq}} = 0.\+006
+\item 
+const double \mbox{\hyperlink{csv__motor__sil__test_8c_a5f08b1398d3b8d56cba76f7c0a4c2427}{lambda\+\_\+f}} = 0.\+1
+\item 
+const double \mbox{\hyperlink{csv__motor__sil__test_8c_a5456e6e23c6736a394a21cd1ee89aa57}{P}} = 4
+\item 
+const double \mbox{\hyperlink{csv__motor__sil__test_8c_abb4f6430d98825c1e2344074ee09c57a}{J}} = 0.\+01
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a1999dc08300c57b2f4149553cc8d7f83}{id\+\_\+ref}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a1f4dea1e335fbe56f58f6852b0cac132}{iq\+\_\+ref}} = 10
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a0261d9180f13f3b8f54e57e9b05abf43}{Kp\+\_\+id}} = 1.\+0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a8cfb52e835ef4ce46152c18111a9dcf4}{Ki\+\_\+id}} = 50.\+0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a67975c0ba729ff43e15a6da0dfa27f2b}{Kp\+\_\+iq}} = 1.\+0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_aa6d7f8d7a1bf8c930693b6080e4e949a}{Ki\+\_\+iq}} = 50.\+0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_ae73d8fab0b44acec1c88ef0f1a07f08a}{id}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_abb89d9e5d6c367b40137646255bf0d8a}{iq}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a74e8ba1ad6281c67bf4ddb41a7b85d6e}{vd}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a0ef985843d0c369c46969db4a6ac697a}{vq}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_aaf4377a46cba15eb68272ca12f84818b}{theta\+\_\+e}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a186d9976b206fdca68b8a988e60148bb}{omega\+\_\+m}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a9ce77902e279c4fdd9d36dac63536b7c}{omega\+\_\+e}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a21431830a78f670d5dc8e08ad860bcf9}{Te}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a09b9c655535c50029c7f8dbc427a9189}{id\+\_\+err\+\_\+int}} = 0
+\item 
+double \mbox{\hyperlink{csv__motor__sil__test_8c_a14daa3638f33b229df3d170e911fb564}{iq\+\_\+err\+\_\+int}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{csv__motor__sil__test_8c_a598a3330b3c21701223ee0ca14316eca}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!PI@{PI}}
+\index{PI@{PI}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a598a3330b3c21701223ee0ca14316eca} 
+\#define PI~3.\+14159265359}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{csv__motor__sil__test_8c_a368106079e23c2ed72415ef3dd3d2362}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!foc\_control@{foc\_control}}
+\index{foc\_control@{foc\_control}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{foc\_control()}{foc\_control()}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a368106079e23c2ed72415ef3dd3d2362} 
+void foc\+\_\+control (\begin{DoxyParamCaption}\item[{double}]{id\+\_\+ref}{, }\item[{double}]{iq\+\_\+ref}{, }\item[{double}]{id}{, }\item[{double}]{iq}{, }\item[{double}]{theta\+\_\+e}{, }\item[{double}]{time\+\_\+step}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{csv__motor__sil__test_8c_a368106079e23c2ed72415ef3dd3d2362_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{csv__motor__sil__test_8c_a0ddf1224851353fc92bfbff6f499fa97}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!main@{main}}
+\index{main@{main}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{csv__motor__sil__test_8c_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{csv__motor__sil__test_8c_ac943ae92f993bb420d5f7710cb6062f4}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!motor\_dynamics@{motor\_dynamics}}
+\index{motor\_dynamics@{motor\_dynamics}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{motor\_dynamics()}{motor\_dynamics()}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_ac943ae92f993bb420d5f7710cb6062f4} 
+void motor\+\_\+dynamics (\begin{DoxyParamCaption}\item[{double}]{vd}{, }\item[{double}]{vq}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{id}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{iq}{, }\item[{double}]{time\+\_\+step}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{csv__motor__sil__test_8c_ac943ae92f993bb420d5f7710cb6062f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{csv__motor__sil__test_8c_a341b09ab4b8f3ce3c2f903e71fa4cfeb}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!motor\_mechanics@{motor\_mechanics}}
+\index{motor\_mechanics@{motor\_mechanics}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{motor\_mechanics()}{motor\_mechanics()}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a341b09ab4b8f3ce3c2f903e71fa4cfeb} 
+void motor\+\_\+mechanics (\begin{DoxyParamCaption}\item[{double}]{Te}{, }\item[{double}]{Tl}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{omega\+\_\+m}{, }\item[{double}]{time\+\_\+step}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{csv__motor__sil__test_8c_a341b09ab4b8f3ce3c2f903e71fa4cfeb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{csv__motor__sil__test_8c_ae73d8fab0b44acec1c88ef0f1a07f08a}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!id@{id}}
+\index{id@{id}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_ae73d8fab0b44acec1c88ef0f1a07f08a} 
+double id = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_a09b9c655535c50029c7f8dbc427a9189}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!id\_err\_int@{id\_err\_int}}
+\index{id\_err\_int@{id\_err\_int}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{id\_err\_int}{id\_err\_int}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a09b9c655535c50029c7f8dbc427a9189} 
+double id\+\_\+err\+\_\+int = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_a1999dc08300c57b2f4149553cc8d7f83}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!id\_ref@{id\_ref}}
+\index{id\_ref@{id\_ref}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{id\_ref}{id\_ref}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a1999dc08300c57b2f4149553cc8d7f83} 
+double id\+\_\+ref = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_abb89d9e5d6c367b40137646255bf0d8a}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!iq@{iq}}
+\index{iq@{iq}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{iq}{iq}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_abb89d9e5d6c367b40137646255bf0d8a} 
+double iq = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_a14daa3638f33b229df3d170e911fb564}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!iq\_err\_int@{iq\_err\_int}}
+\index{iq\_err\_int@{iq\_err\_int}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{iq\_err\_int}{iq\_err\_int}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a14daa3638f33b229df3d170e911fb564} 
+double iq\+\_\+err\+\_\+int = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_a1f4dea1e335fbe56f58f6852b0cac132}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!iq\_ref@{iq\_ref}}
+\index{iq\_ref@{iq\_ref}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{iq\_ref}{iq\_ref}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a1f4dea1e335fbe56f58f6852b0cac132} 
+double iq\+\_\+ref = 10}
+
+\Hypertarget{csv__motor__sil__test_8c_abb4f6430d98825c1e2344074ee09c57a}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!J@{J}}
+\index{J@{J}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{J}{J}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_abb4f6430d98825c1e2344074ee09c57a} 
+const double J = 0.\+01}
+
+\Hypertarget{csv__motor__sil__test_8c_a8cfb52e835ef4ce46152c18111a9dcf4}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!Ki\_id@{Ki\_id}}
+\index{Ki\_id@{Ki\_id}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{Ki\_id}{Ki\_id}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a8cfb52e835ef4ce46152c18111a9dcf4} 
+double Ki\+\_\+id = 50.\+0}
+
+\Hypertarget{csv__motor__sil__test_8c_aa6d7f8d7a1bf8c930693b6080e4e949a}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!Ki\_iq@{Ki\_iq}}
+\index{Ki\_iq@{Ki\_iq}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{Ki\_iq}{Ki\_iq}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_aa6d7f8d7a1bf8c930693b6080e4e949a} 
+double Ki\+\_\+iq = 50.\+0}
+
+\Hypertarget{csv__motor__sil__test_8c_a0261d9180f13f3b8f54e57e9b05abf43}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!Kp\_id@{Kp\_id}}
+\index{Kp\_id@{Kp\_id}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{Kp\_id}{Kp\_id}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a0261d9180f13f3b8f54e57e9b05abf43} 
+double Kp\+\_\+id = 1.\+0}
+
+\Hypertarget{csv__motor__sil__test_8c_a67975c0ba729ff43e15a6da0dfa27f2b}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!Kp\_iq@{Kp\_iq}}
+\index{Kp\_iq@{Kp\_iq}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{Kp\_iq}{Kp\_iq}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a67975c0ba729ff43e15a6da0dfa27f2b} 
+double Kp\+\_\+iq = 1.\+0}
+
+\Hypertarget{csv__motor__sil__test_8c_a5f08b1398d3b8d56cba76f7c0a4c2427}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!lambda\_f@{lambda\_f}}
+\index{lambda\_f@{lambda\_f}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{lambda\_f}{lambda\_f}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a5f08b1398d3b8d56cba76f7c0a4c2427} 
+const double lambda\+\_\+f = 0.\+1}
+
+\Hypertarget{csv__motor__sil__test_8c_a73e7ca81301e13a7c2ff3d9231643578}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!Ld@{Ld}}
+\index{Ld@{Ld}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{Ld}{Ld}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a73e7ca81301e13a7c2ff3d9231643578} 
+const double Ld = 0.\+005}
+
+\Hypertarget{csv__motor__sil__test_8c_a98c068c9c9ee1e25c925f5846c938c33}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!Lq@{Lq}}
+\index{Lq@{Lq}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{Lq}{Lq}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a98c068c9c9ee1e25c925f5846c938c33} 
+const double Lq = 0.\+006}
+
+\Hypertarget{csv__motor__sil__test_8c_a9ce77902e279c4fdd9d36dac63536b7c}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!omega\_e@{omega\_e}}
+\index{omega\_e@{omega\_e}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{omega\_e}{omega\_e}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a9ce77902e279c4fdd9d36dac63536b7c} 
+double omega\+\_\+e = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_a186d9976b206fdca68b8a988e60148bb}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!omega\_m@{omega\_m}}
+\index{omega\_m@{omega\_m}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{omega\_m}{omega\_m}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a186d9976b206fdca68b8a988e60148bb} 
+double omega\+\_\+m = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_a5456e6e23c6736a394a21cd1ee89aa57}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!P@{P}}
+\index{P@{P}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{P}{P}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a5456e6e23c6736a394a21cd1ee89aa57} 
+const double P = 4}
+
+\Hypertarget{csv__motor__sil__test_8c_afb148be8dc640ef64d116be2f4631e8c}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!Rs@{Rs}}
+\index{Rs@{Rs}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{Rs}{Rs}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_afb148be8dc640ef64d116be2f4631e8c} 
+const double Rs = 0.\+1}
+
+\Hypertarget{csv__motor__sil__test_8c_a21431830a78f670d5dc8e08ad860bcf9}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!Te@{Te}}
+\index{Te@{Te}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{Te}{Te}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a21431830a78f670d5dc8e08ad860bcf9} 
+double Te = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_aaf4377a46cba15eb68272ca12f84818b}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!theta\_e@{theta\_e}}
+\index{theta\_e@{theta\_e}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{theta\_e}{theta\_e}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_aaf4377a46cba15eb68272ca12f84818b} 
+double theta\+\_\+e = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_a74e8ba1ad6281c67bf4ddb41a7b85d6e}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!vd@{vd}}
+\index{vd@{vd}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{vd}{vd}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a74e8ba1ad6281c67bf4ddb41a7b85d6e} 
+double vd = 0}
+
+\Hypertarget{csv__motor__sil__test_8c_a0ef985843d0c369c46969db4a6ac697a}\index{csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}!vq@{vq}}
+\index{vq@{vq}!csv\_motor\_sil\_test.c@{csv\_motor\_sil\_test.c}}
+\doxysubsubsection{\texorpdfstring{vq}{vq}}
+{\footnotesize\ttfamily \label{csv__motor__sil__test_8c_a0ef985843d0c369c46969db4a6ac697a} 
+double vq = 0}
+

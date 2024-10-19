@@ -1,0 +1,24 @@
+digraph SIL_Environment_Functional_Calls {
+    rankdir=LR;
+    
+    // Nodes for main files
+    motor_test [label="csv_motor_sil_test.c", shape=box];
+    motor_plot [label="plot_motor_simulation_v2.py", shape=ellipse];
+    batch_exec [label="run_simulation.bat", shape=parallelogram];
+    init_config [label="init_config.py", shape=ellipse];
+    
+    // Functional dependencies
+    batch_exec -> motor_test [label="Executes Motor Test" ];
+    batch_exec -> motor_plot [label="Calls Plot Script"];
+    motor_test -> init_config [label="Uses Initialization Config" ];
+    motor_plot -> motor_test [label="Reads Motor Test Output (CSV)" ];
+    
+    // Call dependenciesa
+    init_config -> motor_plot [label="Provides Configuration" ];
+    motor_plot -> "matplotlib" [label="Calls for Plotting", style=dashed];
+    motor_plot -> "pandas" [label="Calls for Data Handling", style=dashed];
+    
+    // External libraries used in C code
+    motor_test -> "stdio.h" [label="Standard I/O Library", style=dashed];
+    motor_test -> "stdlib.h" [label="Standard Library", style=dashed];
+}
